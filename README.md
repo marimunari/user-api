@@ -22,7 +22,8 @@ Este projeto é uma API de autenticação de usuários, utilizando JWT para gere
    ```bash
    git clone https://github.com/marimunari/user-api
    cd user-api
-2. **Crie um arquivo .env com as seguintes informações:**
+   ```
+2. **Crie um arquivo .env com as seguintes variáveis e adicionado suas informações:**
  ```bash
    # Database configuration
     DB_HOST=
@@ -35,14 +36,17 @@ Este projeto é uma API de autenticação de usuários, utilizando JWT para gere
     # JWT secrets
     JWT_SECRET=
     REFRESH_JWT_SECRET=
+ ```
 3. **Execute o seguinte comando para instalar as bibliotecas necessárias:**
  ```bash
     go mod tidy
+ ```
 4. **Execute as migrações do banco de dados: O projeto inclui uma função de migração automática. Ao executar o servidor pela primeira vez, o banco de dados será configurado automaticamente.**
 
 ## Executando a Aplicação
   ```bash
      go run main.go
+  ```
 A API estará disponível em http://localhost:8080.
 
 ## Endpoints
@@ -52,3 +56,4 @@ A API estará disponível em http://localhost:8080.
     /api/logout: Faz logout do usuário
     /api/user: Exibe detalhes do usuário (rota protegida)
     /api/refresh-token: Atualiza o token do usuário
+```
