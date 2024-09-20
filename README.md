@@ -57,3 +57,5 @@ A API estará disponível em http://localhost:8080.
     /api/user: Exibe detalhes do usuário (rota protegida)
     /api/refresh-token: Atualiza o token do usuário
 ```
+
+**Obs.:** Rode o frontend disponível no repositório [user-management](https://github.com/marimunari/user-management) para que seja possível validar os endpoints através de uma tela.
